@@ -16,7 +16,7 @@ def dibalik(x):
         for y in range(1,len(lst[i])+1):
             c+=lst[i][len(lst[i])-y]
         c+=" "
-    print(f'{c}')
+    return c
 
 #dibalik(input("Kata yang ingin dibalik : "))
 
@@ -48,4 +48,4 @@ def caesar_chipher(x):
             else:
                 a+=ca[ca.index(i)+2]
     print(a)
-caesar_chipher(input("Masukkan kata: "))
+#caesar_chipher(input("Masukkan kata: "))

@@ -1,5 +1,6 @@
 import json
 import csv
+import palindrome
 # data=open('daftar.csv','r')
 # x=data.read().split('\n')
 # head=x[0].split(',')
@@ -147,5 +148,13 @@ def moveZeros(x=list):
             elif x[i]==0 or x=='0':
                 x[i],x[y]=x[y],x[i]
     return x
-meh=[2,3,3,False,True,1,'a']
+def spinWords(x=str):
+    a=x.split(" ")
+    c=' '
+    for i in range(len(a)):
+        if len(a[i])>=5:
+            a[i]= a[i][::-1]
+    return c.join(a)
+meh=[2,0,0,False,True,1,'a']
 print(moveZeros(meh))
+print(spinWords(input('mau ngebalik apa? ')))
