@@ -124,18 +124,28 @@ def isvalidcc(no):
         valid=True                
     return valid
 
-with open('nasabah.json','r') as baca:
-    a=json.load(baca)
-    val=[]
-    inval=[]
-    for i in range(len(a)):
-        if isvalidcc(a[i]['noCreditCard'])==True:
-            val.append(a[i])
-        else:
-            inval.append(a[i])
-with open('valid.json','w') as tulis:
-    json.dump(val,tulis)
-with open('invalid.json','w') as tulis:
+# with open('nasabah.json','r') as baca:
+#     a=json.load(baca)
+#     val=[]
+#     inval=[]
+#     for i in range(len(a)):
+#         if isvalidcc(a[i]['noCreditCard'])==True:
+#             val.append(a[i])
+#         else:
+#             inval.append(a[i])
+# with open('valid.json','w') as tulis:
+#     json.dump(val,tulis)
+# with open('invalid.json','w') as tulis:
     json.dump(inval,tulis)
 # json_to_csv('valid.json','valid.csv')
 # json_to_csv('invalid.json','invalid.csv')
+def moveZeros(x=list):
+    for i in range(len(x)):
+        for y in range(i+1,len(x)):
+            if type(x[i])==bool:
+                continue
+            elif x[i]==0:
+                x[i],x[y]=x[y],x[i]
+    return x
+meh=[False,True,1,0,0,'a','0']
+print(moveZeros(meh))
