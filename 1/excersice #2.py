@@ -1,0 +1,15 @@
+# val=input('Masukkan jumlah hari : ')
+# d=int(val)
+# day=round(((d%360)%7))
+# week=round((d%360)/7)
+# if (week>=4):
+#     week %= 4
+# month=round((d%360)/30)
+# year=round(d/360)
+# print(str(year), "Tahun" ,str(month), "Bulan", str(week), "Minggu", str(day), "Hari")
+d=int(input("masukkan jumlah hari: "))
+year=round(d/360)
+month=int((d%360)/30)
+week=int(((d%360)%30)/7)
+day=int(((d%360)%30)%7)
+print(str(year), "Tahun" ,str(month), "Bulan", str(week), "Minggu", str(day), "Hari")
