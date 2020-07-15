@@ -147,5 +147,5 @@ def moveZeros(x=list):
             elif x[i]==0 or x=='0':
                 x[i],x[y]=x[y],x[i]
     return x
-meh=[0,0,2,3,3,False,True,1,0,0,'a','0']
+meh=[2,3,3,False,True,1,'a']
 print(moveZeros(meh))
