@@ -136,7 +136,7 @@ def isvalidcc(no):
 # with open('valid.json','w') as tulis:
 #     json.dump(val,tulis)
 # with open('invalid.json','w') as tulis:
-    json.dump(inval,tulis)
+    # json.dump(inval,tulis)
 # json_to_csv('valid.json','valid.csv')
 # json_to_csv('invalid.json','invalid.csv')
 def moveZeros(x=list):
