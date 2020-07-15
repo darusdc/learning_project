@@ -144,8 +144,8 @@ def moveZeros(x=list):
         for y in range(i+1,len(x)):
             if type(x[i])==bool:
                 continue
-            elif x[i]==0:
+            elif x[i]==0 or x=='0':
                 x[i],x[y]=x[y],x[i]
     return x
-meh=[False,True,1,0,0,'a','0']
+meh=[0,0,2,3,3,False,True,1,0,0,'a','0']
 print(moveZeros(meh))
