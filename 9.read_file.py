@@ -90,35 +90,27 @@ def isvalidcc(no):
     valid=False
     b=[]
     if a.find('-')>0 or len(a)==16:
-        # print('masuk 1')
         if a[0]=='4' or a[0]=='5' or a[0]=='6':
-            # print('masuk 2')
             if a.find('-')>0:
                 d=a.split('-')
                 c=a.replace('-','')
                 for i in d: 
                     if len(i)>4 or len(i)<4:
                         b.append(False)
-                # print(c)
             else:
                 c=a
             if c.isnumeric()==False or len(c)>16:
-                # print('salah')
                 b.append(False)
             else:
                 for j in range(len(c)):
                     if c[j:j+4]==c[j]*4:
-                        # print('vat')
                         b.append(False)
                     else:
-                        # print('tur')
                         b.append(True)
         else:
-            # print('masuk terakhir')
             b.append(False)
     else:
         b.append(False)
-    # print(b)
     if b.count(False)>0:
         valid=False
     else:
@@ -157,4 +149,4 @@ def spinWords(x=str):
     return c.join(a)
 meh=[2,0,0,False,True,1,'a']
 print(moveZeros(meh))
-print(spinWords(input('mau ngebalik apa? ')))
+print(spinWords(input('kata yang lebih dari 5 huruf yang akan dibalik, tuliskan kalimatnya? ')))

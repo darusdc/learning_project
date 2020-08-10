@@ -1,0 +1,38 @@
+table, td, th{
+    border: 2px ridge blue;
+    border-collapse: collapse;
+    text-align: center;
+}
+h1{
+    color: blue;
+    font-family: roboto;
+}
+p{
+    color:green;
+}
+.Mobil{
+    color: red;
+}
+#Avanza{
+    color:yellow;
+}
+body{
+    /* background-image: url(https://travelmaker.id/wp-content/uploads/2019/07/WhatsApp-Image-2019-07-04-at-00.59.28-min.jpeg); */
+    background-size: 125%;
+}
+.Lorem{
+    color: black;
+    font-family: 'Grenze Gotisch', cursive;
+    font-style: italic;
+    /* text-transform: uppercase;
+    text-decoration: line-through; */
+    text-shadow: -4px 4px 4px blanchedalmond;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    text-align: left;
+    text-indent: 2rem;
+}
+ul,li{
+    list-style-type: square;
+}
+.table{background-color: sandybrown}
